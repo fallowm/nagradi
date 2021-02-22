@@ -1,0 +1,1967 @@
+<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="js/jquery.quicksand.js" type="text/javascript"></script>
+<script src="js/jquery.easing.js" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<style>
+/* Ширина области галереи */
+.portfolio-content, .portfolio-area{width:880px;}
+/* Ширина и высота области картинки */
+.portfolio-area li{width: 245px; height: 250px; float: left;margin: 0 12px 20px 0;overflow: hidden;padding:5px;}
+/* Ширина и высота картинки */
+.image-block img{width: 225px; height: 145px; border: 1px solid #d5d5d5; border-radius: 4px 4px 4px 4px;background:#FFFFFF;padding:10px;}
+.image-block img:hover{border: 1px solid #A9CF54;box-shadow:0 0 5px #A9CF54;}
+</style>
+
+<!--
+НАСТРОЙКИ: в script.js + ТАМ СТОИТ jQuery.noConflict(); + можно поменять тему оформления всплыв. окна (черные и белые)
+
+Фотогалерея с сортировкой по категориям -
+Функцию категорий можно отключить удалив блог .portfolio-categ
+Добавить фото:
+Чтобы была сортировка по категориям в data-id="id-0" пишем уникальный id + в data-type="cat-item-4" пишем к какой категории относится фото
+Чтобы при увеличении выводилось название фотки - надо писать title
+одновременно идут ссылки на миниатюру и полную фотку - можно все размещать в 1 папке
+-->
+
+<nav class="top-menu">
+  <a class="navbar-logo" href=""><img src="images/logo-dark.png" alt="на главную"></a>
+ 
+</nav>
+
+
+<div class="portfolio-content">
+<ul class="portfolio-categ filter">
+<li>Категории грамот:</li>
+<li class="all active"><a href="#">Все</a></li>
+<li class="cat-item-1"><a href="#" title="Ученики">Ученики</a></li>
+<li class="cat-item-2"><a href="#" title="Ученик года">Ученик года</a></li>
+<li class="cat-item-3"><a href="#" title="Педагоги">Педагоги</a></li>
+<li class="cat-item-4"><a href="#" title="Самоуправление">Самоуправление</a></li>
+<li class="cat-item-5"><a href="#" title="Общие">Общие</a></li>
+</ul>
+
+<ul class="portfolio-area">
+
+<li class="portfolio-item2" data-id="id-0" data-type="cat-item-5">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ob/2007.jpg" rel="prettyPhoto[gallery]" title="">
+<img src="images/thumbs/p6.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2007</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-0" data-type="cat-item-5">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ob/2011.JPG" rel="prettyPhoto[gallery]" title="">
+<img src="images/thumbs/p6.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2011</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-0" data-type="cat-item-5">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ob/2012-1.JPG" rel="prettyPhoto[gallery]" title="">
+<img src="images/thumbs/p6.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2012</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-0" data-type="cat-item-5">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ob/2012-3.JPG" rel="prettyPhoto[gallery]" title="">
+<img src="images/thumbs/p6.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2012</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-0" data-type="cat-item-5">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ob/2012.JPG" rel="prettyPhoto[gallery]" title="">
+<img src="images/thumbs/p6.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2012</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-0" data-type="cat-item-5">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ob/2015-1.jpg" rel="prettyPhoto[gallery]" title="">
+<img src="images/thumbs/p6.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2015</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-0" data-type="cat-item-5">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ob/2015-2.JPG" rel="prettyPhoto[gallery]" title="">
+<img src="images/thumbs/p6.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2015</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-0" data-type="cat-item-5">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ob/2015.jpg" rel="prettyPhoto[gallery]" title="">
+<img src="images/thumbs/p6.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2015</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-0" data-type="cat-item-5">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ob/2016-1.jpg" rel="prettyPhoto[gallery]" title="">
+<img src="images/thumbs/p6.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2016</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-0" data-type="cat-item-5">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ob/2016-2.jpg" rel="prettyPhoto[gallery]" title="">
+<img src="images/thumbs/p6.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2016</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-0" data-type="cat-item-5">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ob/2016-3.jpg" rel="prettyPhoto[gallery]" title="">
+<img src="images/thumbs/p6.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2016</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-0" data-type="cat-item-5">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ob/2016-4.jpg" rel="prettyPhoto[gallery]" title="">
+<img src="images/thumbs/p6.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2016</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-0" data-type="cat-item-5">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ob/2016.jpg" rel="prettyPhoto[gallery]" title="">
+<img src="images/thumbs/p6.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2016</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-0" data-type="cat-item-5">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ob/2017-1.jpg" rel="prettyPhoto[gallery]" title="">
+<img src="images/thumbs/p6.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2017</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-0" data-type="cat-item-5">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ob/2017-2.jpg" rel="prettyPhoto[gallery]" title="">
+<img src="images/thumbs/p6.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2017</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-0" data-type="cat-item-5">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ob/2017-3.JPG" rel="prettyPhoto[gallery]" title="">
+<img src="images/thumbs/p6.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2017</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-0" data-type="cat-item-5">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ob/2017.jpg" rel="prettyPhoto[gallery]" title="">
+<img src="images/thumbs/p6.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2017</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-0" data-type="cat-item-5">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ob/2018-1.JPG" rel="prettyPhoto[gallery]" title="">
+<img src="images/thumbs/p6.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2018</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-0" data-type="cat-item-5">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ob/2018-2.JPG" rel="prettyPhoto[gallery]" title="">
+<img src="images/thumbs/p6.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2018</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-0" data-type="cat-item-5">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ob/2018.jpg" rel="prettyPhoto[gallery]" title="">
+<img src="images/thumbs/p6.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2018</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-0" data-type="cat-item-5">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ob/2019.JPG" rel="prettyPhoto[gallery]" title="">
+<img src="images/thumbs/p6.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2019</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-0" data-type="cat-item-5">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ob/2020-1.JPG" rel="prettyPhoto[gallery]" title="">
+<img src="images/thumbs/p6.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2020</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-0" data-type="cat-item-5">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ob/2020.JPG" rel="prettyPhoto[gallery]" title="">
+<img src="images/thumbs/p6.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2020</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-0" data-type="cat-item-4">
+<span class="image-block">
+<a class="image-zoom" href="images/big/usu/2013.JPG" rel="prettyPhoto[gallery]" title="Ученическое самоуправление">
+<img src="images/thumbs/p1.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2013</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-0" data-type="cat-item-4">
+<span class="image-block">
+<a class="image-zoom" href="images/big/usu/2013-1.JPG" rel="prettyPhoto[gallery]" title="Ученическое самоуправление">
+<img src="images/thumbs/p1.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2013</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-0" data-type="cat-item-4">
+<span class="image-block">
+<a class="image-zoom" href="images/big/usu/2013-11.JPG" rel="prettyPhoto[gallery]" title="Ученическое самоуправление">
+<img src="images/thumbs/p1.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2013</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-1" data-type="cat-item-2">
+<span class="image-block">
+<a class="image-zoom" href="images/big/UG/2013 (1).JPG" rel="prettyPhoto[gallery]" title="Вверх">
+<img src="images/thumbs/p2.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2013</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-1" data-type="cat-item-2">
+<span class="image-block">
+<a class="image-zoom" href="images/big/UG/2013 (2).JPG" rel="prettyPhoto[gallery]" title="Вверх">
+<img src="images/thumbs/p2.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2013</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-1" data-type="cat-item-2">
+<span class="image-block">
+<a class="image-zoom" href="images/big/UG/2013 (3).JPG" rel="prettyPhoto[gallery]" title="Вверх">
+<img src="images/thumbs/p2.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2013</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-1" data-type="cat-item-2">
+<span class="image-block">
+<a class="image-zoom" href="images/big/UG/2013 (4).JPG" rel="prettyPhoto[gallery]" title="Вверх">
+<img src="images/thumbs/p2.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2013</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-1" data-type="cat-item-2">
+<span class="image-block">
+<a class="image-zoom" href="images/big/UG/2013 (5).JPG" rel="prettyPhoto[gallery]" title="Вверх">
+<img src="images/thumbs/p2.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2013</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-1" data-type="cat-item-2">
+<span class="image-block">
+<a class="image-zoom" href="images/big/UG/2013 (6).JPG" rel="prettyPhoto[gallery]" title="Вверх">
+<img src="images/thumbs/p2.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2013</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-1" data-type="cat-item-2">
+<span class="image-block">
+<a class="image-zoom" href="images/big/UG/2013 (7).JPG" rel="prettyPhoto[gallery]" title="Вверх">
+<img src="images/thumbs/p2.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2013</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-1" data-type="cat-item-2">
+<span class="image-block">
+<a class="image-zoom" href="images/big/UG/2013 (8).JPG" rel="prettyPhoto[gallery]" title="Вверх">
+<img src="images/thumbs/p2.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2013</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-1" data-type="cat-item-2">
+<span class="image-block">
+<a class="image-zoom" href="images/big/UG/2013 (9).JPG" rel="prettyPhoto[gallery]" title="Вверх">
+<img src="images/thumbs/p2.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2013</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-1" data-type="cat-item-2">
+<span class="image-block">
+<a class="image-zoom" href="images/big/UG/2014-11.JPG" rel="prettyPhoto[gallery]" title="Вверх">
+<img src="images/thumbs/p2.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2014</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-1" data-type="cat-item-2">
+<span class="image-block">
+<a class="image-zoom" href="images/big/UG/2014-12.JPG" rel="prettyPhoto[gallery]" title="Вверх">
+<img src="images/thumbs/p2.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2014</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-1" data-type="cat-item-2">
+<span class="image-block">
+<a class="image-zoom" href="images/big/UG/2015 (3).JPG" rel="prettyPhoto[gallery]" title="Вверх">
+<img src="images/thumbs/p2.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2015</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-1" data-type="cat-item-2">
+<span class="image-block">
+<a class="image-zoom" href="images/big/UG/2015 (4).JPG" rel="prettyPhoto[gallery]" title="Вверх">
+<img src="images/thumbs/p2.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2015</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-1" data-type="cat-item-2">
+<span class="image-block">
+<a class="image-zoom" href="images/big/UG/2017-1.JPG" rel="prettyPhoto[gallery]" title="Вверх">
+<img src="images/thumbs/p2.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2017</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-1" data-type="cat-item-2">
+<span class="image-block">
+<a class="image-zoom" href="images/big/UG/2017.jpg" rel="prettyPhoto[gallery]" title="Вверх">
+<img src="images/thumbs/p2.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2017</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-1" data-type="cat-item-2">
+<span class="image-block">
+<a class="image-zoom" href="images/big/UG/2019-1.jpg" rel="prettyPhoto[gallery]" title="Вверх">
+<img src="images/thumbs/p2.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2019</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+
+
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/яАкиХар.JPG" rel="prettyPhoto[gallery]" title="Акифьева Ирина Харченко Юлия">
+<img src="images/thumbs/p13.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Я росинка твоя, Россия!</a></h2>
+<p class="post-subtitle-portfolio">2012</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/яМакаревич.JPG" rel="prettyPhoto[gallery]" title="Макаревич Матвей">
+<img src="images/thumbs/p13.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Я росинка твоя, Россия!</a></h2>
+<p class="post-subtitle-portfolio">2012</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/яКараманов.JPG" rel="prettyPhoto[gallery]" title="Караманов Куаныш">
+<img src="images/thumbs/p13.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Я росинка твоя, Россия!</a></h2>
+<p class="post-subtitle-portfolio">2012</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/яКовСол.JPG" rel="prettyPhoto[gallery]" title="Коваленко Дарья Соловьева Валерия">
+<img src="images/thumbs/p13.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Я росинка твоя, Россия!</a></h2>
+<p class="post-subtitle-portfolio">2012</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/яКух.JPG" rel="prettyPhoto[gallery]" title="Кухаренко Владимир">
+<img src="images/thumbs/p13.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Я росинка твоя, Россия!</a></h2>
+<p class="post-subtitle-portfolio">2012</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/яКухКуд.JPG" rel="prettyPhoto[gallery]" title="Кухаренко Владимир Кудрин Александр">
+<img src="images/thumbs/p13.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Я росинка твоя, Россия!</a></h2>
+<p class="post-subtitle-portfolio">2012</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Акифьева.JPG" rel="prettyPhoto[gallery]" title="Акифьева Ирина">
+<img src="images/thumbs/p3.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Грамоты ОмГАУ</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Атанова.JPG" rel="prettyPhoto[gallery]" title="Атанова Инна">
+<img src="images/thumbs/p3.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Грамоты ОмГАУ</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+
+
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Говор.JPG" rel="prettyPhoto[gallery]" title="Говор Никита">
+<img src="images/thumbs/p3.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Грамоты ОмГАУ</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Захаров.JPG" rel="prettyPhoto[gallery]" title="Захаров Владислав">
+<img src="images/thumbs/p3.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Грамоты ОмГАУ</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Скудина.JPG" rel="prettyPhoto[gallery]" title="Скудина Александра">
+<img src="images/thumbs/p3.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Грамоты ОмГАУ</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Кабулдинова.JPG" rel="prettyPhoto[gallery]" title="Кабулдинова Хамида">
+<img src="images/thumbs/p3.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Грамоты ОмГАУ</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Литвинова.JPG" rel="prettyPhoto[gallery]" title="Литвинова Евгения">
+<img src="images/thumbs/p3.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Грамоты ОмГАУ</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Рындина.JPG" rel="prettyPhoto[gallery]" title="Рындина Светлана">
+<img src="images/thumbs/p3.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Грамоты ОмГАУ</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Хамов.JPG" rel="prettyPhoto[gallery]" title="Хамов Сергей">
+<img src="images/thumbs/p3.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Грамоты ОмГАУ</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Толстунова.JPG" rel="prettyPhoto[gallery]" title="Толстунова Анастасия">
+<img src="images/thumbs/p3.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Грамоты ОмГАУ</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Левченко.JPG" rel="prettyPhoto[gallery]" title="Левченко Богдан">
+<img src="images/thumbs/p3.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Грамоты ОмГАУ</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Неудахин.JPG" rel="prettyPhoto[gallery]" title="Неудахин Максим">
+<img src="images/thumbs/p3.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Грамоты ОмГАУ</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-3" data-type="cat-item-4">
+<span class="image-block">
+<a class="image-zoom" href="images/big/usu/2014.JPG" rel="prettyPhoto[gallery]" title="Ученическое самоуправление">
+<img src="images/thumbs/p1.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2014</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-3" data-type="cat-item-4">
+<span class="image-block">
+<a class="image-zoom" href="images/big/usu/2014-1.jpg" rel="prettyPhoto[gallery]" title="Ученическое самоуправление">
+<img src="images/thumbs/p1.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2014</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-3" data-type="cat-item-4">
+<span class="image-block">
+<a class="image-zoom" href="images/big/usu/2014 (2).JPG" rel="prettyPhoto[gallery]" title="Ученическое самоуправление">
+<img src="images/thumbs/p1.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2014</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/оЭйснер 3.JPG" rel="prettyPhoto[gallery]" title="Эйснер Анастасия">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/оЭйснер2.JPG" rel="prettyPhoto[gallery]" title="Эйснер Анастасия">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/оАкифьеваИ.JPG" rel="prettyPhoto[gallery]" title="Акифьева Ирина">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/оЭйснер 1.JPG" rel="prettyPhoto[gallery]" title="Эйснер Анастасия">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/оШпрингер.JPG" rel="prettyPhoto[gallery]" title="Шпрингер Анжелика">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+
+
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/оБезукладов.JPG" rel="prettyPhoto[gallery]" title="Безукладов Илья">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/оКабулдинова.JPG" rel="prettyPhoto[gallery]" title="Кабулдинова Сания">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/оСкудина А..JPG" rel="prettyPhoto[gallery]" title="Скудина Александра">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/оДжусь А..JPG" rel="prettyPhoto[gallery]" title="Джусь Анна">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/оДжусь Е..JPG" rel="prettyPhoto[gallery]" title="Джусь Елена">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/оЛюбич 2.JPG" rel="prettyPhoto[gallery]" title="Любич Юлия">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/оЛюбич 3.JPG" rel="prettyPhoto[gallery]" title="Любич Юлия">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/оЛюбич 1.JPG" rel="prettyPhoto[gallery]" title="Любич Юлия">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/оТроицкий.JPG" rel="prettyPhoto[gallery]" title="Троицкий Егор">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ошЕмельянова15.jpeg" rel="prettyPhoto[gallery]" title="Емельянова Татьяна">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2015</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ошЕмельянова2015.jpeg" rel="prettyPhoto[gallery]" title="Емельянова Татьяна">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2015</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ошБулгакова (1).jpg" rel="prettyPhoto[gallery]" title="Булгакова Дана">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2016</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ошКабулдинова16.jpg" rel="prettyPhoto[gallery]" title="Кабулдинова Хамида">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2016</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ошКорнева16.jpg" rel="prettyPhoto[gallery]" title="Корнева Анастасия">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2016</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ошЛитвинова16.jpg" rel="prettyPhoto[gallery]" title="Литвинова Евгения">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2016</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ошПестерева16.jpg" rel="prettyPhoto[gallery]" title="Пестерева Александра">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2016</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ошТолстун16.jpg" rel="prettyPhoto[gallery]" title="Толстунова Анастасия">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2016</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ошБулгакова (2).jpg" rel="prettyPhoto[gallery]" title="Булгакова Дана">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2016</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ошДжусь2016.jpg" rel="prettyPhoto[gallery]" title="Джусь Анна">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2016</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ошДжусь16.jpg" rel="prettyPhoto[gallery]" title="Джусь Анна">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2016</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ошКлимова17.jpg" rel="prettyPhoto[gallery]" title="Климова Полина">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2017</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ошСагандыкова19.JPG" rel="prettyPhoto[gallery]" title="Сагандыкова Сауле">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2019</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ошГусак19.JPG" rel="prettyPhoto[gallery]" title="Гусак Дарья">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2019</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/ошКапутин.JPG" rel="prettyPhoto[gallery]" title="Капутин Михаил">
+<img src="images/thumbs/p7.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">В.О.Ш.</a></h2>
+<p class="post-subtitle-portfolio">2019</p>
+</div>
+</li>
+
+
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/МВЛ/LU2.JPG" rel="prettyPhoto[gallery]" title="Любич Юлия">
+<img src="images/thumbs/p9.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Турнир им. М. В. Ломоносова</a></h2>
+<p class="post-subtitle-portfolio">2011</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/МВЛ/LU1.JPG" rel="prettyPhoto[gallery]" title="Любич Юлия">
+<img src="images/thumbs/p9.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Турнир
+ им. М. В. Ломоносова</a></h2>
+<p class="post-subtitle-portfolio">2011</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/МВЛ/LU3.JPG" rel="prettyPhoto[gallery]" title="Любич Юлия">
+<img src="images/thumbs/p9.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Турнир им. М. В. Ломоносова</a></h2>
+<p class="post-subtitle-portfolio">2011</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/МВЛ/Акифьева.JPG" rel="prettyPhoto[gallery]" title="Акифьева Ирина">
+<img src="images/thumbs/p9.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Турнир им. М. В. Ломоносова</a></h2>
+<p class="post-subtitle-portfolio">2012</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/МВЛ/КабулдиноваСания.JPG" rel="prettyPhoto[gallery]" title="Кабулдинова Сания">
+<img src="images/thumbs/p9.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Турнир им. М. В. Ломоносова</a></h2>
+<p class="post-subtitle-portfolio">2012</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/МВЛ/Эйснер.JPG" rel="prettyPhoto[gallery]" title="Эйснер Анастасия">
+<img src="images/thumbs/p9.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Турнир им. М. В. Ломоносова</a></h2>
+<p class="post-subtitle-portfolio">2012</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Poisk/Захаров, Говор 1.JPG" rel="prettyPhoto[gallery]" title="Захаров Владислав, Говор Никита">
+<img src="images/thumbs/p17.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">НОУ "Поиск"</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Poisk/Захаров, Говор.JPG" rel="prettyPhoto[gallery]" title="Захаров Владислав, Говор Никита">
+<img src="images/thumbs/p17.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">НОУ "Поиск"</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Poisk/Кабулдинова.JPG" rel="prettyPhoto[gallery]" title="Кабулдинова Хамида">
+<img src="images/thumbs/p17.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">НОУ "Поиск"</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Poisk/Кабулдинова1.JPG" rel="prettyPhoto[gallery]" title="Кабулдинова Хамида">
+<img src="images/thumbs/p17.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">НОУ "Поиск"</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Poisk/Караманова.JPG" rel="prettyPhoto[gallery]" title="Караманова Камила">
+<img src="images/thumbs/p17.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">НОУ "Поиск"</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Poisk/Караманова1.JPG" rel="prettyPhoto[gallery]" title="Караманова Камила, Шарова А.А.">
+<img src="images/thumbs/p17.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">НОУ "Поиск"</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Poisk/Неудахин, Левченко.JPG" rel="prettyPhoto[gallery]" title="Неудахин Максим, Левченко Богдан">
+<img src="images/thumbs/p17.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">НОУ "Поиск"</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Poisk/неудахин, левченко1.JPG" rel="prettyPhoto[gallery]" title="Неудахин Максим, Левченко Богдан, Захарова О.Н.">
+<img src="images/thumbs/p17.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">НОУ "Поиск"</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/OmGTU/1.jpg" rel="prettyPhoto[gallery]" title="Захаров Владислав, Говор Никита, Кулешов Данила">
+<img src="images/thumbs/p18.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">ОмГТУ</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/OmGTU/2.jpg" rel="prettyPhoto[gallery]" title="Захаров Владислав, Говор Никита, Кулешов Данила">
+<img src="images/thumbs/p18.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">ОмГТУ</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Krai/1.jpg" rel="prettyPhoto[gallery]" title="Липина Дарья">
+<img src="images/thumbs/p19.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Школьное краеведение</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Krai/2.jpg" rel="prettyPhoto[gallery]" title="Эйснер Анастасия">
+<img src="images/thumbs/p19.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Школьное краеведение</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Разн/ШульгинЧунга.jpg" rel="prettyPhoto[gallery]" title="Шульгин Владимир">
+<img src="images/thumbs/p20.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Чунга-чанга</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-4" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Zax/1.JPG" rel="prettyPhoto[gallery]" title="Захарова Ольга Николаевна">
+<img src="images/thumbs/p5.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >Захарова Ольга Николаевна</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-4" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Zax/2012.JPG" rel="prettyPhoto[gallery]" title="Захарова Ольга Николаевна">
+<img src="images/thumbs/p5.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >Захарова Ольга Николаевна</a></h2>
+<p class="post-subtitle-portfolio">2012</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-4" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Zax/2013-1.JPG" rel="prettyPhoto[gallery]" title="Захарова Ольга Николаевна">
+<img src="images/thumbs/p5.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >Захарова Ольга Николаевна</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-4" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Zax/2013-2.JPG" rel="prettyPhoto[gallery]" title="Захарова Ольга Николаевна">
+<img src="images/thumbs/p5.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >Захарова Ольга Николаевна</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-4" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Zax/2013-3.JPG" rel="prettyPhoto[gallery]" title="Захарова Ольга Николаевна">
+<img src="images/thumbs/p5.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >Захарова Ольга Николаевна</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-4" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Zax/2014.JPG" rel="prettyPhoto[gallery]" title="Захарова Ольга Николаевна">
+<img src="images/thumbs/p5.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >Захарова Ольга Николаевна</a></h2>
+<p class="post-subtitle-portfolio">2014</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-4" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Zax/2017.JPG" rel="prettyPhoto[gallery]" title="Захарова Ольга Николаевна">
+<img src="images/thumbs/p5.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >Захарова Ольга Николаевна</a></h2>
+<p class="post-subtitle-portfolio">2017</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-4" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Zax/2018.jpg" rel="prettyPhoto[gallery]" title="Захарова Ольга Николаевна">
+<img src="images/thumbs/p5.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >Захарова Ольга Николаевна</a></h2>
+<p class="post-subtitle-portfolio">2018</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-4" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Zax/2019-1.jpg" rel="prettyPhoto[gallery]" title="Захарова Ольга Николаевна">
+<img src="images/thumbs/p5.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >Захарова Ольга Николаевна</a></h2>
+<p class="post-subtitle-portfolio">2019</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-4" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Zax/2019.jpg" rel="prettyPhoto[gallery]" title="Захарова Ольга Николаевна">
+<img src="images/thumbs/p5.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >Захарова Ольга Николаевна</a></h2>
+<p class="post-subtitle-portfolio">2019</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-4" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Zax/2020.JPG" rel="prettyPhoto[gallery]" title="Захарова Ольга Николаевна">
+<img src="images/thumbs/p5.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >Захарова Ольга Николаевна</a></h2>
+<p class="post-subtitle-portfolio">2020</p>
+</div>
+</li>
+
+
+<li class="portfolio-item2" data-id="id-1" data-type="cat-item-2">
+<span class="image-block">
+<a class="image-zoom" href="images/big/UG/2019.jpg" rel="prettyPhoto[gallery]" title="Вверх">
+<img src="images/thumbs/p2.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">2019</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+
+
+<li class="portfolio-item2" data-id="id-7" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/зГусак.jpg" rel="prettyPhoto[gallery]" title="Гусак Дарья">
+<img src="images/thumbs/p8.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Занковцы</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-7" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/зКарташёв.jpg" rel="prettyPhoto[gallery]" title="Карташёв Артём">
+<img src="images/thumbs/p8.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Занковцы</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-7" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/зКарташёв1.jpg" rel="prettyPhoto[gallery]" title="Карташёв Артём">
+<img src="images/thumbs/p8.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Занковцы</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+
+
+
+<li class="portfolio-item2" data-id="id-7" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/рБурьба.JPG" rel="prettyPhoto[gallery]" title="Бурьба Елизавета">
+<img src="images/thumbs/p14.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Моя страна - моя Россия</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+
+
+
+<li class="portfolio-item2" data-id="id-7" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/рФедорович.JPG" rel="prettyPhoto[gallery]" title="Федорович Евгений">
+<img src="images/thumbs/p14.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Моя страна - моя Россия</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Акифьева Летопись.JPG" rel="prettyPhoto[gallery]" title="Акифьева Ирина">
+<img src="images/thumbs/p15.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Летопись</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Дана_Летопись.jpg" rel="prettyPhoto[gallery]" title="Булгакова Дана">
+<img src="images/thumbs/p15.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Летопись</a></h2>
+<p class="post-subtitle-portfolio">2016</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Джейкенов_летопись2017.jpg" rel="prettyPhoto[gallery]" title="Джейкенов Эльдар">
+<img src="images/thumbs/p15.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Летопись</a></h2>
+<p class="post-subtitle-portfolio">2017</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/В-2012 (1).JPG" rel="prettyPhoto[gallery]" title="Захаров Владислав, Кулешов Данила">
+<img src="images/thumbs/p16.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Конкурс им. В.И.Вернадского</a></h2>
+<p class="post-subtitle-portfolio">2012</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/В-2012 (2).JPG" rel="prettyPhoto[gallery]" title="Захаров Владислав, Кулешов Данила">
+<img src="images/thumbs/p16.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Конкурс им. В.И.Вернадского</a></h2>
+<p class="post-subtitle-portfolio">2012</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/в-2013/Булгакова Д..JPG" rel="prettyPhoto[gallery]" title="Булгакова Дана">
+<img src="images/thumbs/p16.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Конкурс им. В.И.Вернадского</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/в-2013/Булгакова Д.1.JPG" rel="prettyPhoto[gallery]" title="Булгакова Дана, Булгакова Е.Л">
+<img src="images/thumbs/p16.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Конкурс им. В.И.Вернадского</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/в-2013/Бурьба.JPG" rel="prettyPhoto[gallery]" title="Бурьба Елизавета, Говор Н.Н.">
+<img src="images/thumbs/p16.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Конкурс им. В.И.Вернадского</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/в-2013/Бурьба1.JPG" rel="prettyPhoto[gallery]" title="Бурьба Елизавета">
+<img src="images/thumbs/p16.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Конкурс им. В.И.Вернадского</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/в-2013/Манапов  Левченко.JPG" rel="prettyPhoto[gallery]" title="Манапов Куат, Левченко Богдан, Захарова О.Н.">
+<img src="images/thumbs/p16.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Конкурс им. В.И.Вернадского</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/в-2013/Манапов Левченко 1.JPG" rel="prettyPhoto[gallery]" title="Манапов Куат, Левченко Богдан">
+<img src="images/thumbs/p16.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Конкурс им. В.И.Вернадского</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/в-2013/Манапов Левченко 2.JPG" rel="prettyPhoto[gallery]" title="Манапов Куат, Левченко Богдан">
+<img src="images/thumbs/p16.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Конкурс им. В.И.Вернадского</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/в-2013/Харченко Акифьева 1.JPG" rel="prettyPhoto[gallery]" title="Харченко Юлия, Акифьева Ирина">
+<img src="images/thumbs/p16.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Конкурс им. В.И.Вернадского</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/в-2013/Харченко Акифьева 2.JPG" rel="prettyPhoto[gallery]" title="Харченко Юлия, Акифьева Ирина">
+<img src="images/thumbs/p16.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Конкурс им. В.И.Вернадского</a></h2>
+<p class="post-subtitle-portfolio">2015</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/в-2013/Харченко Акифьева 3.JPG" rel="prettyPhoto[gallery]" title="Бурьба Елизавета, Акифьева Ирина">
+<img src="images/thumbs/p16.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Конкурс им. В.И.Вернадского</a></h2>
+<p class="post-subtitle-portfolio">2015</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/в-2013/Харченко Акифьева.JPG" rel="prettyPhoto[gallery]" title="Харченко Юлия, Акифьева Ирина, Акифьева Г.В.">
+<img src="images/thumbs/p16.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Конкурс им. В.И.Вернадского</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/в-2013/Ращенко Верн 2015.jpg" rel="prettyPhoto[gallery]" title="Ращенко Валерия">
+<img src="images/thumbs/p16.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Конкурс им. В.И.Вернадского</a></h2>
+<p class="post-subtitle-portfolio">2015</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Разн/ДжусьБулгОкол.JPG" rel="prettyPhoto[gallery]" title="Моя жизненная позиция">
+<img src="images/thumbs/p21.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Моя жизненная позиция</a></h2>
+<p class="post-subtitle-portfolio">2011</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Разн/Шульг Урожай.JPG" rel="prettyPhoto[gallery]" title="Шульгин Владимир">
+<img src="images/thumbs/p21.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Урожай</a></h2>
+<p class="post-subtitle-portfolio">2011</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Разн/Scan10002.JPG" rel="prettyPhoto[gallery]" title="Сербина Арина">
+<img src="images/thumbs/p21.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Избирательная комиссия</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Разн/викторина Вов ИРООО 2016.jpg" rel="prettyPhoto[gallery]" title="">
+<img src="images/thumbs/p21.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Викторина В.О.В.</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Разн/ШулЭстр вокал.jpg" rel="prettyPhoto[gallery]" title="Шульгин Владимир">
+<img src="images/thumbs/p21.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Эстрадный вокал</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Разн/ТолстШвам.JPG" rel="prettyPhoto[gallery]" title="Толстунова Анастасия, Швам Регина">
+<img src="images/thumbs/p21.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Сибирь военная</a></h2>
+<p class="post-subtitle-portfolio">2014</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Разн/Манапов Куатик Океан 2015 .JPG" rel="prettyPhoto[gallery]" title="Манапов Куат">
+<img src="images/thumbs/p21.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Океан</a></h2>
+<p class="post-subtitle-portfolio">2015</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Разн/Хасанов Артек 2015.JPG" rel="prettyPhoto[gallery]" title="Хасанов Руслан">
+<img src="images/thumbs/p21.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Артек</a></h2>
+<p class="post-subtitle-portfolio">2015</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Разн/медиа_Москва 2016.jpg" rel="prettyPhoto[gallery]" title="Молодежные медиа">
+<img src="images/thumbs/p21.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Молодежные медиа</a></h2>
+<p class="post-subtitle-portfolio">2016</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Разн/Франк медиа 2016.jpg" rel="prettyPhoto[gallery]" title="Молодежные медиа">
+<img src="images/thumbs/p21.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Молодежные медиа</a></h2>
+<p class="post-subtitle-portfolio">2016</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Разн/Хамида_Кутафинская.jpg" rel="prettyPhoto[gallery]" title="Молодежные медиа">
+<img src="images/thumbs/p21.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Кутафинская олимпиада</a></h2>
+<p class="post-subtitle-portfolio">2016</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Разн/Денцель Вл_рег поэтич.jpg" rel="prettyPhoto[gallery]" title="Денцель Влада">
+<img src="images/thumbs/p21.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Поэтическое творчество</a></h2>
+<p class="post-subtitle-portfolio">2016</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Разн/2. Н.Диденко.jpg" rel="prettyPhoto[gallery]" title="Диденко Анастасия">
+<img src="images/thumbs/p21.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Политех</a></h2>
+<p class="post-subtitle-portfolio">2018</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Разн/сербина.png" rel="prettyPhoto[gallery]" title="Сербина Арина">
+<img src="images/thumbs/p21.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Поэтическое творчество</a></h2>
+<p class="post-subtitle-portfolio">2018</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Разн/Сканировать1.JPG" rel="prettyPhoto[gallery]" title="Диденко Анастасия, Хасанов Руслан">
+<img src="images/thumbs/p21.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Реализованные проекты</a></h2>
+<p class="post-subtitle-portfolio">2018</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+<span class="image-block">
+<a class="image-zoom" href="images/big/Разн/Мечтатели 19.jpg" rel="prettyPhoto[gallery]" title="Мечтатели">
+<img src="images/thumbs/p21.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Мечтатели</a></h2>
+<p class="post-subtitle-portfolio">2019</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Akif/2012.JPG" rel="prettyPhoto[gallery]" title="Акифьева Галина Викторовна">
+<img src="images/thumbs/p11.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Акифьева Галина Викторовна</a></h2>
+<p class="post-subtitle-portfolio">2012</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Akif/2016.jpg" rel="prettyPhoto[gallery]" title="Акифьева Галина Викторовна">
+<img src="images/thumbs/p11.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Акифьева Галина Викторовна</a></h2>
+<p class="post-subtitle-portfolio">2016</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Beng/2016-1.jpg" rel="prettyPhoto[gallery]" title="Бернгардт Ирина Григорьевна">
+<img src="images/thumbs/p005.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Бернгардт Ирина Григорьевна</a></h2>
+<p class="post-subtitle-portfolio">2016</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Beng/2016.jpg" rel="prettyPhoto[gallery]" title="Бернгардт Ирина Григорьевна">
+<img src="images/thumbs/p005.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Бернгардт Ирина Григорьевна</a></h2>
+<p class="post-subtitle-portfolio">2016</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Shmidt/2017.jpg" rel="prettyPhoto[gallery]" title="Шмидт Татьяна Петровна">
+<img src="images/thumbs/p006.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Шмидт Татьяна Петровна</a></h2>
+<p class="post-subtitle-portfolio">2017</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Shmidt/2017-1.jpg" rel="prettyPhoto[gallery]" title="Шмидт Татьяна Петровна">
+<img src="images/thumbs/p006.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Шмидт Татьяна Петровна</a></h2>
+<p class="post-subtitle-portfolio">2017</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Spek/2015.JPG" rel="prettyPhoto[gallery]" title="Шпек Елена Андреевна">
+<img src="images/thumbs/p007.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Шпек Елена Андреевна</a></h2>
+<p class="post-subtitle-portfolio">2015</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Spek/2019.jpg" rel="prettyPhoto[gallery]" title="Шпек Елена Андреевна">
+<img src="images/thumbs/p007.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Шпек Елена Андреевна</a></h2>
+<p class="post-subtitle-portfolio">2019</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Диянов грамоты/2014 (2).JPG" rel="prettyPhoto[gallery]" title="Диянов Константин Сергеевич">
+<img src="images/thumbs/p008.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Диянов Константин Сергеевич</a></h2>
+<p class="post-subtitle-portfolio">2014</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Диянов грамоты/2014.JPG" rel="prettyPhoto[gallery]" title="Диянов Константин Сергеевич">
+<img src="images/thumbs/p008.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Диянов Константин Сергеевич</a></h2>
+<p class="post-subtitle-portfolio">2014</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Диянов грамоты/2015.JPG" rel="prettyPhoto[gallery]" title="Диянов Константин Сергеевич">
+<img src="images/thumbs/p008.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Диянов Константин Сергеевич</a></h2>
+<p class="post-subtitle-portfolio">2015</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Диянов грамоты/2015 (2).jpg" rel="prettyPhoto[gallery]" title="Диянов Константин Сергеевич">
+<img src="images/thumbs/p008.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Диянов Константин Сергеевич</a></h2>
+<p class="post-subtitle-portfolio">2015</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Диянов грамоты/2016.jpg" rel="prettyPhoto[gallery]" title="Диянов Константин Сергеевич">
+<img src="images/thumbs/p008.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Диянов Константин Сергеевич</a></h2>
+<p class="post-subtitle-portfolio">2016</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Диянов грамоты/2016 (2).jpg" rel="prettyPhoto[gallery]" title="Диянов Константин Сергеевич">
+<img src="images/thumbs/p008.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Диянов Константин Сергеевич</a></h2>
+<p class="post-subtitle-portfolio">2016</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Диянов грамоты/2017 (2).jpg" rel="prettyPhoto[gallery]" title="Диянов Константин Сергеевич">
+<img src="images/thumbs/p008.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Диянов Константин Сергеевич</a></h2>
+<p class="post-subtitle-portfolio">2017</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Диянов грамоты/2017 (3).jpg" rel="prettyPhoto[gallery]" title="Диянов Константин Сергеевич">
+<img src="images/thumbs/p008.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Диянов Константин Сергеевич</a></h2>
+<p class="post-subtitle-portfolio">2017</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Диянов грамоты/2017 (3).jpg" rel="prettyPhoto[gallery]" title="Диянов Константин Сергеевич">
+<img src="images/thumbs/p008.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Диянов Константин Сергеевич</a></h2>
+<p class="post-subtitle-portfolio">2017</p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Диянов грамоты/2017.jpg" rel="prettyPhoto[gallery]" title="Диянов Константин Сергеевич">
+<img src="images/thumbs/p008.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Диянов Константин Сергеевич</a></h2>
+<p class="post-subtitle-portfolio">2017</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/GAM/2017Майфат.jpg" rel="prettyPhoto[gallery]" title="Майфат Галина Александровна">
+<img src="images/thumbs/p009.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Майфат Галина Александровна</a></h2>
+<p class="post-subtitle-portfolio">2017</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Gov/Говор.jpg" rel="prettyPhoto[gallery]" title="Говор Надежда Николаевна">
+<img src="images/thumbs/p010.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Говор Надежда Николаевна</a></h2>
+<p class="post-subtitle-portfolio">2017</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Ivan/2016Иванеко ТИ.jpg" rel="prettyPhoto[gallery]" title="Иванеко Татьяна Ивановна">
+<img src="images/thumbs/p011.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Иванеко Татьяна Ивановна</a></h2>
+<p class="post-subtitle-portfolio">2016</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Matievskai/2013Матиевская.jpg" rel="prettyPhoto[gallery]" title="Матиевская Елена Георгиевна">
+<img src="images/thumbs/p012.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Матиевская Елена Георгиевна</a></h2>
+<p class="post-subtitle-portfolio">2013</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/Pfaf/2012Пфафенрод.JPG" rel="prettyPhoto[gallery]" title="Пфафенрод Максим Александрович">
+<img src="images/thumbs/p013.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Пфафенрод Максим Александрович</a></h2>
+<p class="post-subtitle-portfolio">2012</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/2016Шарова .jpg" rel="prettyPhoto[gallery]" title="Шарова Алена Александровна">
+<img src="images/thumbs/p014.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Шарова Алена Александровна</a></h2>
+<p class="post-subtitle-portfolio">2016</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/2015Нацаренус ВН .jpg" rel="prettyPhoto[gallery]" title="Нацаренус Валентина Николаевна">
+<img src="images/thumbs/p015.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Нацаренус Валентина Николаевна</a></h2>
+<p class="post-subtitle-portfolio">2015</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
+<span class="image-block">
+<a class="image-zoom" href="images/big/педагоги/2016.jpg" rel="prettyPhoto[gallery]" title="Майфат С.В. Булгакова Е.Л.">
+<img src="images/thumbs/p016.jpg"/></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark">Майфат С.В., Булгакова Е.Л.</a></h2>
+<p class="post-subtitle-portfolio">2016</p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-11" data-type="cat-item-4">
+<span class="image-block">
+<a class="image-zoom" href="images/big/usu/2015.JPG" rel="prettyPhoto[gallery]" title="Ученическое самоуправление">
+<img src="images/thumbs/p1.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >2015</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-11" data-type="cat-item-4">
+<span class="image-block">
+<a class="image-zoom" href="images/big/usu/2015 (2).JPG" rel="prettyPhoto[gallery]" title="Ученическое самоуправление">
+<img src="images/thumbs/p1.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >2015</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-11" data-type="cat-item-4">
+<span class="image-block">
+<a class="image-zoom" href="images/big/usu/2015-1.jpg" rel="prettyPhoto[gallery]" title="Ученическое самоуправление">
+<img src="images/thumbs/p1.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >2015</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-11" data-type="cat-item-4">
+<span class="image-block">
+<a class="image-zoom" href="images/big/usu/2016-1.jpg" rel="prettyPhoto[gallery]" title="Ученическое самоуправление">
+<img src="images/thumbs/p1.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >2016</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-11" data-type="cat-item-4">
+<span class="image-block">
+<a class="image-zoom" href="images/big/usu/2016.jpg" rel="prettyPhoto[gallery]" title="Ученическое самоуправление">
+<img src="images/thumbs/p1.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >2016</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+
+<li class="portfolio-item2" data-id="id-11" data-type="cat-item-4">
+<span class="image-block">
+<a class="image-zoom" href="images/big/usu/2017-1.jpg" rel="prettyPhoto[gallery]" title="Ученическое самоуправление">
+<img src="images/thumbs/p1.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >2017</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-11" data-type="cat-item-4">
+<span class="image-block">
+<a class="image-zoom" href="images/big/usu/2017.jpg" rel="prettyPhoto[gallery]" title="Ученическое самоуправление">
+<img src="images/thumbs/p1.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >2017</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-11" data-type="cat-item-4">
+<span class="image-block">
+<a class="image-zoom" href="images/big/usu/2018-1.jpeg" rel="prettyPhoto[gallery]" title="Ученическое самоуправление">
+<img src="images/thumbs/p1.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >2018</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-11" data-type="cat-item-4">
+<span class="image-block">
+<a class="image-zoom" href="images/big/usu/2018-2.jpg" rel="prettyPhoto[gallery]" title="Ученическое самоуправление">
+<img src="images/thumbs/p1.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >2018</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-11" data-type="cat-item-4">
+<span class="image-block">
+<a class="image-zoom" href="images/big/usu/2018-3.jpg" rel="prettyPhoto[gallery]" title="Ученическое самоуправление">
+<img src="images/thumbs/p1.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >2018</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-11" data-type="cat-item-4">
+<span class="image-block">
+<a class="image-zoom" href="images/big/usu/2018-4.jpg" rel="prettyPhoto[gallery]" title="Ученическое самоуправление">
+<img src="images/thumbs/p1.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >2018</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-11" data-type="cat-item-4">
+<span class="image-block">
+<a class="image-zoom" href="images/big/usu/2018-5.jpg" rel="prettyPhoto[gallery]" title="Ученическое самоуправление">
+<img src="images/thumbs/p1.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >2018</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-11" data-type="cat-item-4">
+<span class="image-block">
+<a class="image-zoom" href="images/big/usu/2018-6.JPG" rel="prettyPhoto[gallery]" title="Ученическое самоуправление">
+<img src="images/thumbs/p1.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >2018</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-11" data-type="cat-item-4">
+<span class="image-block">
+<a class="image-zoom" href="images/big/usu/2018-7.jpg" rel="prettyPhoto[gallery]" title="Ученическое самоуправление">
+<img src="images/thumbs/p1.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >2018</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-11" data-type="cat-item-4">
+<span class="image-block">
+<a class="image-zoom" href="images/big/usu/2018-8.jpg" rel="prettyPhoto[gallery]" title="Ученическое самоуправление">
+<img src="images/thumbs/p1.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >2018</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-11" data-type="cat-item-4">
+<span class="image-block">
+<a class="image-zoom" href="images/big/usu/2018.JPG" rel="prettyPhoto[gallery]" title="Ученическое самоуправление">
+<img src="images/thumbs/p1.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >2018</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-11" data-type="cat-item-4">
+<span class="image-block">
+<a class="image-zoom" href="images/big/usu/2019.JPG" rel="prettyPhoto[gallery]" title="Ученическое самоуправление">
+<img src="images/thumbs/p1.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >2019</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-11" data-type="cat-item-4">
+<span class="image-block">
+<a class="image-zoom" href="images/big/usu/2019-1.JPG" rel="prettyPhoto[gallery]" title="Ученическое самоуправление">
+<img src="images/thumbs/p1.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >2019</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-11" data-type="cat-item-4">
+<span class="image-block">
+<a class="image-zoom" href="images/big/usu/2019-2.jpg" rel="prettyPhoto[gallery]" title="Ученическое самоуправление">
+<img src="images/thumbs/p1.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >2019</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+<li class="portfolio-item2" data-id="id-11" data-type="cat-item-4">
+<span class="image-block">
+<a class="image-zoom" href="images/big/usu/2019-3.JPG" rel="prettyPhoto[gallery]" title="Ученическое самоуправление">
+<img src="images/thumbs/p1.jpg" /></a></span>
+<div class="home-portfolio-text">
+<h2 class="post-title-portfolio"><a href="#" rel="bookmark" >2019</a></h2>
+<p class="post-subtitle-portfolio"></p>
+</div>
+</li>
+
+
+</ul>
+</div>
